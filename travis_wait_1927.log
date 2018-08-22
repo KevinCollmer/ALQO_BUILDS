@@ -1,0 +1,222 @@
+Making check in src
+make[1]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[2]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+make  check-TESTS check-local
+make[3]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[4]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+  CC       src/bench_verify.o
+  CC       src/bench_sign.o
+make[4]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+  CC       src/bench_internal-bench_internal.o
+  CC       src/bench_ecmult-bench_ecmult.o
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+make[5]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[5]: `libsecp256k1.la' is up to date.
+make[5]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+PASS: test/bitcoin-util-test.py
+  CC       src/tests-tests.o
+  CC       src/exhaustive_tests-tests_exhaustive.o
+  CC       src/bench_recover.o
+In file included from src/secp256k1.c:15:0,
+                 from src/tests.c:17:
+src/ecmult_const_impl.h: In function ‘secp256k1_wnaf_const’:
+src/ecmult_const_impl.h:113:20: warning: ‘u’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     wnaf[word] = u * global_sign;
+                    ^
+  CCLD     bench_verify
+  CCLD     bench_sign
+  CCLD     bench_internal
+  CCLD     bench_ecmult
+  CCLD     exhaustive_tests
+  CCLD     bench_recover
+  CCLD     tests
+make  check-TESTS
+make[5]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[6]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+PASS: exhaustive_tests
+PASS: tests
+make[7]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[7]: Nothing to be done for `all'.
+make[7]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+============================================================================
+Testsuite summary for libsecp256k1 0.1
+============================================================================
+# TOTAL: 2
+# PASS:  2
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[6]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[5]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[4]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[4]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+  CXX      test/test_object-object.o
+  CXX      test/test_unitester-unitester.o
+  CXX      test/test_no_nul-no_nul.o
+  CXX      test/test_test_json-test_json.o
+  CXXLD    test/unitester
+  CXXLD    test/no_nul
+  CXXLD    test/test_json
+  CXXLD    test/object
+make  check-TESTS
+make[5]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make[6]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+PASS: test/object
+PASS: test/unitester
+PASS: test/no_nul
+make[7]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make  all-am
+make[8]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make[8]: Nothing to be done for `all-am'.
+make[8]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make[7]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+============================================================================
+Testsuite summary for univalue 1.0.3
+============================================================================
+# TOTAL: 3
+# PASS:  3
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[6]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make[5]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+make[4]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/univalue'
+PASS: test/test_pivx
+make[5]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[6]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[7]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+make[7]: `libsecp256k1.la' is up to date.
+make[7]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src/secp256k1'
+usage: git rev-list [OPTION] <commit-id>... [ -- paths... ]
+  limiting output:
+    --max-count=<n>
+    --max-age=<epoch>
+    --min-age=<epoch>
+    --sparse
+    --no-merges
+    --min-parents=<n>
+    --no-min-parents
+    --max-parents=<n>
+    --no-max-parents
+    --remove-empty
+    --all
+    --branches
+    --tags
+    --remotes
+    --stdin
+    --quiet
+  ordering output:
+    --topo-order
+    --date-order
+    --reverse
+  formatting output:
+    --parents
+    --children
+    --objects | --objects-edge
+    --unpacked
+    --header | --pretty
+    --abbrev=<n> | --no-abbrev
+    --abbrev-commit
+    --left-right
+    --count
+  special purpose:
+    --bisect
+    --bisect-vars
+    --bisect-all
+make[6]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[5]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+============================================================================
+Testsuite summary for Pivx Core 3.1.99
+============================================================================
+# TOTAL: 2
+# PASS:  2
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+============================================================================
+make[4]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[3]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[2]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[1]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu/src'
+make[1]: Entering directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu'
+make[1]: Nothing to be done for `check-am'.
+make[1]: Leaving directory `/home/travis/build/KevinCollmer/ALQO/bitcoin-x86_64-unknown-linux-gnu'

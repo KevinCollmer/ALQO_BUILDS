@@ -1,0 +1,98 @@
+Running 149 test cases...
+libzerocoin v0.11 benchmark utility.
+
+Testing if an RSA modulus can be generated...
+	[32m[PASS][0m
+Testing if parameter sizes are correct...
+	[32m[PASS][0m
+Testing if group/field parameters can be generated...
+	[32m[PASS][0m
+Testing if parameter generation is correct...
+	PARAMGEN ELAPSED TIME: 2371 ms	2.371 s
+	[32m[PASS][0m
+Testing if coins can be minted...
+	MINT ELAPSED TIME:
+		Total: 29917 ms	29.917 s
+		Per Coin: 598 ms	0.598 s
+	[32m[PASS][0m
+Testing if the accumulator works...
+	[32m[PASS][0m
+Testing if a minted coin can be spent...
+	ACCUMULATOR ELAPSED TIME:
+		Total: 4440 ms	4.44 s
+		Per Element: 88 ms	0.088 s
+	WITNESS ELAPSED TIME: 
+		Total: 4355 ms	4.355 s
+		Per Element: 87 ms	0.087 s
+	SPEND ELAPSED TIME: 563 ms	0.563 s
+	SERIALIZE ELAPSED TIME: 3 ms	0.003 s
+	SPEND VERIFY ELAPSED TIME: 434 ms	0.434 s
+	[32m[PASS][0m
+7 out of 7 tests passed.
+
+libzerocoin v0.11 test utility.
+
+Testing if an RSA modulus can be generated...
+	[32m[PASS][0m
+Testing if parameter sizes are correct...
+	[32m[PASS][0m
+Testing if group/field parameters can be generated...
+	[32m[PASS][0m
+Testing if parameter generation is correct...
+	[32m[PASS][0m
+Testing if coins can be minted...
+	[32m[PASS][0m
+Testing if invalid coins will be rejected...
+PublicCoin::validate value is too low
+PublicCoin::validate value is not prime
+PublicCoin::validate value is not prime
+PublicCoin::validate value is too low
+	[32m[PASS][0m
+Testing if the accumulator works...
+	[32m[PASS][0m
+Testing if the commitment equality PoK works...
+	[32m[PASS][0m
+Testing if a minted coin can be spent...
+	[32m[PASS][0m
+
+Average coin size is 133 bytes.
+Serial number size is 32 bytes.
+Spend proof size is 19858 bytes.
+
+9 out of 9 tests passed.
+
+Curremt Amount held = 145: 0*1 + 1*5 + 4*10 + 2*50 + 0*100 + 0*500 + 0*1000 + 0*5000 + 
+Curremt Amount held = 241: 1*1 + 2*5 + 3*10 + 4*50 + 0*100 + 0*500 + 0*1000 + 0*5000 + 
+Curremt Amount held = 245: 0*1 + 1*5 + 4*10 + 2*50 + 1*100 + 0*500 + 0*1000 + 0*5000 + 
+Running ZerocoinDenominationToValue_test...
+Curremt Amount held = 245: 0*1 + 1*5 + 4*10 + 2*50 + 1*100 + 0*500 + 0*1000 + 0*5000 + 
+Running amount_to_denomination_test...
+Curremt Amount held = 115: 0*1 + 1*5 + 1*10 + 2*50 + 0*100 + 0*500 + 0*1000 + 0*5000 + 
+Running check_zerocoinspend_test...
+CoinSpend:
+ version=1 signatureHash=4ad13fef0cd1fcf9237f6c6556dccc38c6644e9662cbb58e98e284984f38c910 spendtype=0
+
+checking v2 spend
+927ms per mint
+Testing deterministic minting
+Total time:14219ms. Per Deterministic Mint:284ms
+Checking that mints are valid
+Checking that mints are deterministic: sha256 checksum=c90c225f2cbdee5ef053b1f9f70053dd83724c58126d0e1b8425b88091d1f73f
+generating privkeys
+Running check_zerocoinmint_test...
+Running zcparams_test...
+Running check_unitialized parameters,etc for setup exceptions...
+Running checksum_tests
+libzerocoin v0.11 tutorial.
+
+Successfully loaded parameters.
+Successfully minted a zerocoin.
+Deserialized and verified the coin.
+Successfully accumulated coins.
+Successfully generated a coin spend transaction.
+Successfully verified a coin spend transaction.
+
+Coin serial number is:
+110561434499649647982326495700312369049812165696932234474888423848547333656615
+
+*** No errors detected
