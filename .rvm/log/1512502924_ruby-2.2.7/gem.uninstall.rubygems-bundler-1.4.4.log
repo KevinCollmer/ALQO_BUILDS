@@ -1,0 +1,8 @@
+[2017-12-05 19:42:04] command
+current path: /
+GEM_HOME=/home/travis/.rvm/gems/ruby-2.2.7@global
+PATH=/home/travis/.rvm/gems/ruby-2.2.7@global/bin:/home/travis/.rvm/rubies/ruby-2.2.7/bin:/home/travis/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+GEM_PATH=/home/travis/.rvm/gems/ruby-2.2.7@global
+command(8): command gem uninstall rubygems-bundler -v 1.4.4 -x --abort-on-dependent
++ gem uninstall rubygems-bundler -v 1.4.4 -x --abort-on-dependent
+Successfully uninstalled rubygems-bundler-1.4.4

@@ -1,0 +1,46 @@
+[2017-12-05 19:40:36] alias_create_execute
+alias_create_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$alias_name" ]]; then
+            \command \rm -fv "$_path/$alias_name" || return $?;
+        fi;
+        \command \ln -fs "$_path/$rvm_ruby_string" "$_path/$alias_name" || return $?;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$alias_name" "$rvm_ruby_string"
+}
+current path: /
+GEM_HOME=/home/travis/.rvm/gems/ruby-2.4.1
+PATH=/home/travis/.rvm/gems/ruby-2.4.1/bin:/home/travis/.rvm/gems/ruby-2.4.1@global/bin:/home/travis/.rvm/rubies/ruby-2.4.1/bin:/home/travis/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+GEM_PATH=/home/travis/.rvm/gems/ruby-2.4.1:/home/travis/.rvm/gems/ruby-2.4.1@global
+command(1): alias_create_execute
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/travis/.rvm/rubies/default ]]
++ command ln -fs /home/travis/.rvm/rubies/ruby-2.4.1 /home/travis/.rvm/rubies/default
++ ln -fs /home/travis/.rvm/rubies/ruby-2.4.1 /home/travis/.rvm/rubies/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/travis/.rvm/environments/default ]]
++ command ln -fs /home/travis/.rvm/environments/ruby-2.4.1 /home/travis/.rvm/environments/default
++ ln -fs /home/travis/.rvm/environments/ruby-2.4.1 /home/travis/.rvm/environments/default
++ for _path in '"$rvm_rubies_path"' '"$rvm_environments_path"' '"$rvm_wrappers_path"'
++ [[ -L /home/travis/.rvm/wrappers/default ]]
++ command ln -fs /home/travis/.rvm/wrappers/ruby-2.4.1 /home/travis/.rvm/wrappers/default
++ ln -fs /home/travis/.rvm/wrappers/ruby-2.4.1 /home/travis/.rvm/wrappers/default
++ __rvm_db_ /home/travis/.rvm/config/alias default ruby-2.4.1
++ typeset __db __key __value
++ __db=/home/travis/.rvm/config/alias
++ __key=default
++ shift 2
++ __value=ruby-2.4.1
++ case "${__value}" in
++ __rvm_db_add /home/travis/.rvm/config/alias default ruby-2.4.1
++ typeset __dir=/home/travis/.rvm/config
++ [[ -f /home/travis/.rvm/config/alias ]]
++ __rvm_db_remove /home/travis/.rvm/config/alias default
++ [[ -f /home/travis/.rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /home/travis/.rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /home/travis/.rvm/config/alias
++ command mv -f /home/travis/.rvm/config/alias.new /home/travis/.rvm/config/alias
++ mv -f /home/travis/.rvm/config/alias.new /home/travis/.rvm/config/alias
++ printf '%b=%b\n' default ruby-2.4.1
